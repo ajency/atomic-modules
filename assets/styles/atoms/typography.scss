@@ -1,0 +1,58 @@
+// typography.scss -- Typography related styles
+//
+// Copyright (C) 2016 Amit
+//
+// With contributions from: -
+//
+// This software may be modified and distributed under the terms
+// of the MIT license. See the LICENSE file for details.
+
+/**
+ * Headlines which visually separate and introduce content. Both used on Nucleus
+ * pages and the documentation pages.
+ *
+ * @atom Headlines
+ * @section Typography
+ * @markup
+    IE7     IE8     FF2         FF3         Opera   Safari 3.1
+H1  24pt    2em     32px        32px        32px    32px       
+H2  18pt    1.5em   24px        24px        24px    24px
+H3  13.55pt 1.17em  18.7333px   18.7167px   18px    19px
+H4  n/a     n/a     n/a         n/a         n/a     n/a
+H5  10pt    0.83em  13.2667px   13.2833px   13px    13px
+H6  7.55pt  0.67em  10.7333px   10.7167px   10px    11px
+ */
+
+h1{ 
+  font-size: 2em; 
+  margin: .67em 0;
+}
+h2{ 
+  font-size: 1.5em; 
+  margin: .75em 0;
+}
+h3{ 
+  font-size: 1.17em; 
+  margin: .83em 0 ;
+}
+h4, p,blockquote, ul,fieldset, form,ol, dl{
+  margin: 1.12em 0;
+}
+h5{ 
+  font-size: .83em;
+  margin: 1.5em 0;
+}
+h6{
+  font-size: .75em; 
+  margin: 1.67em 0;
+}
+h1, h2, h3, h4,h5, h6, b,strong{ 
+  font-weight: bolder;
+}
+
+.hd-light{
+  font-weight: 100;
+}
+.hd-medium{
+  font-weight: 300;
+}
