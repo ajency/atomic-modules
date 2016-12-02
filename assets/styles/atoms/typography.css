@@ -39,6 +39,10 @@ h6 {
 h1, h2, h3, h4, h5, h6, b, strong {
   font-weight: bolder; }
 
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: #777;
+  font-weight: 200; }
+
 .hd-light {
   font-weight: 100; }
 
