@@ -1,3 +1,6 @@
+html, body * {
+	box-sizing: border-box;
+}
 body{
 	background-color: @gray1;
 	padding: 52px 0 0 180px; /* Header height and sidebar width */
@@ -38,9 +41,17 @@ a {
 	color: @brand-primary;
 }
 
+b, strong {
+	font-weight: 500;
+}
+
 .flex-row {
 	display: flex;
 	flex: 0 1 auto;
+	&--neg-8 {
+		margin-left: -8px;
+		margin-right: -8px;
+	}
 }
 .flex-column {
     -webkit-box-flex: 1;
@@ -48,6 +59,21 @@ a {
     flex-basis: 0;
     padding-right: 8px;
     padding-left: 8px;
+    &--pr24 {
+    	padding-right: 24px;
+    }
+    &--pl24 {
+    	padding-left: 24px;
+    }
+    &--flexwide2 {
+		flex-grow: 2;
+	}
+	&--flexwide3 {
+		flex-grow: 3;
+	}
+	&--flexwide4 {
+		flex-grow: 4;
+	}
 }
 
 .text-right {
@@ -70,6 +96,9 @@ a {
 		// }
 	}
 }
+.big {
+	font-size: 115%;
+}
 
 .normal-link {
 	color: @bodytext;
@@ -91,6 +120,10 @@ a {
 
 .uppercase {
 	text-transform: uppercase;
+}
+
+.spacer-20 {
+	height: 20px;
 }
 
 .main-content{
