@@ -2,7 +2,23 @@
 	position: fixed;
 	top: 52px;
 	left: 0;
-	width: 200px;
+	width: 180px;
 	height: 100%;
 	padding-top: 28px;
+
+}
+
+.menu{
+	background-color: @white;
+	&__link{
+		display: block;
+		padding: 16px 22px;
+		text-transform: uppercase;
+		color: @gray-text;
+		text-decoration: none;
+		&--active{
+			box-shadow: inset 4px 0 0 @primary;
+			color: @primary;
+		}
+	}
 }
