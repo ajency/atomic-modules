@@ -8,6 +8,7 @@
 		// display: block;
 		height: auto;
 		visibility: visible;
+		z-index: 999;
 	}
 	&__backdrop {
 		background: @black;
@@ -67,12 +68,16 @@
 	&__pricetag {
 		background: @mainbg;
 		position: absolute;
-		top: -45px;
+		top: -55px;
 		left: 0;
 		right: 0;
 		margin: auto;
-		width: 100px;
+		width: 118px;
 		padding: 8px 15px;
 		border-radius: 5px;
+		@media screen and (max-width: 1440px) {
+			top: -45px;
+			width: 100px;
+		}
 	}
 }

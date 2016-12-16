@@ -10,3 +10,10 @@ $(document).ready(function() {
 		$('.flyout__content').addClass('flyout__content--hidden');
 	});
 });
+
+$(window).on("load",function(){
+    $(".card-holder").mCustomScrollbar({
+    	theme:"minimal-dark",
+    	scrollInertia: 200
+    });
+});
