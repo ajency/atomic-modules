@@ -16,9 +16,17 @@
 		text-transform: uppercase;
 		color: @gray-text;
 		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.3s ease-in;
 		&--active{
-			box-shadow: inset 4px 0 0 @primary;
-			color: @primary;
+			box-shadow: inset 4px 0 0 @brand-primary;
+			color: @brand-primary;
+			background-color: fade(@brand-primary, 10%)
+		}
+		&:hover{
+			box-shadow: inset 4px 0 0 @brand-primary;
+			color: @brand-primary;
+			// background-color: fade(@brand-primary, 10%)			
 		}
 	}
 }
