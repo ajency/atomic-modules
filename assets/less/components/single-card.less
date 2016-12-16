@@ -7,8 +7,16 @@
 	.locations {
 		flex-grow: 1;
 	}
+	.right-col {
+		@media (max-width: 1440px) { 
+			max-width: 100px;
+		}
+	}
 	&__email {
 		line-height: 18px;
+		.small__email {
+			max-width: 150px;
+		}
 	}
 	&__header {
 		display: flex;

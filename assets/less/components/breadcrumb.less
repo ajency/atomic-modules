@@ -6,7 +6,7 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	width: 70%;
+	width: 60%;
 	margin-right: 15px;
 	&:after {
 		content: '';
@@ -34,5 +34,8 @@
 		&:last-child::after {
 			display: none;
 		}
+	}
+	@media screen and (max-width: 1440px) {
+		font-size: 11px;
 	}
 }
