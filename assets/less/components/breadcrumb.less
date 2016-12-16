@@ -1,0 +1,23 @@
+.breadcrumb {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 12px;
+	list-style-type: none;
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+	}
+	&__single {
+		float: left;
+		margin-right: 12px;
+		&:after {
+			content: '\f0da';
+			font-family: 'FontAwesome';
+			margin-left: 12px;
+		}
+		&:last-child::after {
+			display: none;
+		}
+	}
+}
