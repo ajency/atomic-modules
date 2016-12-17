@@ -20,7 +20,12 @@ $(document).ready(function() {
 $(window).on("load",function(){
     $(".card-holder").mCustomScrollbar({
     	theme:"minimal-dark",
-    	scrollInertia: 200
+    	scrollInertia: 200,
+    	callbacks:{
+    	    onInit:function(){
+    	    	$('.card-holder').css('opacity', 1);
+    	    }
+    	}
     });
 	$( '#cd-dropdown' ).dropdown( {
 		gutter : 5,
