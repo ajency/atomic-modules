@@ -5,7 +5,11 @@ $(document).ready(function() {
 		$('.flyout__content').removeClass('flyout__content--hidden');
 	});
 	$(document).on('click', '.flyout__backdrop', function(e) {
-		$('.flyout').removeClass('flyout--show');
+		// $('.flyout').removeClass('flyout--show');
+		$('.flyout').delay(500).queue(function(next) {
+			$(this).removeClass('flyout--show');
+			next();
+		});
 		$('.flyout__backdrop').removeClass('flyout__backdrop--fadein');
 		$('.flyout__content').addClass('flyout__content--hidden');
 	});
