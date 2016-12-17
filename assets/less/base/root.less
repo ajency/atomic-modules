@@ -1,15 +1,16 @@
-html, body * {
+html, body, * {
 	box-sizing: border-box;
 }
 body{
 	background-color: @gray1;
 	padding: 52px 0 0 180px; /* Header height and sidebar width */
 	font-family: @fontmain;
-	font-size: @base-font-size;
+	// font-size: @base-font-size;
 	color: @bodytext;
-	@media screen and (max-width: 1440px) {
+	// @media screen and (max-width: 1440px) {
 		font-size: @base-font-size - 1;
-	}
+	// }
+	min-width: 1285px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -139,6 +140,8 @@ b, strong {
 	height: 100%;
 	overflow: auto;
 	padding: 28px 20px;
+	max-width: 1280px;
+	margin: 0 auto;
 }
 
 .card-holder{
