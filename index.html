@@ -13,6 +13,7 @@
 		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"> -->
 		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 		<link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+		<link rel="stylesheet" href="assets/css/style5.css">
 		<link rel="stylesheet" href="assets/css/main.css">
 	</head>
 	<body>
@@ -24,18 +25,24 @@
 			<div class="header__logo">
 				<img src="assets/img/logo.png" width="100">
 			</div>
+			<div class="header__actions">
+				<img src="assets/img/header-right.png" width="240">
+			</div>
 		</header>
 
 		<div class="left-sidebar"> 
 			<div class="menu">
 				<ul>
-					<li><a href="#" class="menu__link menu__link--active">Home</a></li>
-					<li><a href="#" class="menu__link">Book a Task</a></li>
-					<li><a href="#" class="menu__link">Report</a></li>
-					<li><a href="#" class="menu__link">Wallet</a></li>
-					<li><a href="#" class="menu__link">Manager</a></li>
-					<li><a href="#" class="menu__link">Executive</a></li>
+					<li><a href="#" class="menu__link menu__link--active"><svg class="lnr menu__icon lnr-home"><use xlink:href="#lnr-home"></use></svg> Home</a></li>
+					<li><a href="#" class="menu__link"><svg class="lnr menu__icon lnr-briefcase"><use xlink:href="#lnr-briefcase"></use></svg>  Book a Task</a></li>
+					<li><a href="#" class="menu__link"><svg class="lnr menu__icon lnr-file-empty"><use xlink:href="#lnr-file-empty"></use></svg> Report</a></li>
+					<li><a href="#" class="menu__link"><svg class="lnr menu__icon lnr-book"><use xlink:href="#lnr-book"></use></svg> Wallet</a></li>
+					<li><a href="#" class="menu__link"><svg class="lnr menu__icon lnr-user"><use xlink:href="#lnr-user"></use></svg> Manager</a></li>
+					<li><a href="#" class="menu__link"><svg class="lnr menu__icon lnr-user"><use xlink:href="#lnr-user"></use></svg> Executive</a></li>
 				</ul>
+			</div>
+			<div class="chat">
+				<img src="assets/img/chat.png" width="180">
 			</div>
 		</div>
 
@@ -44,6 +51,14 @@
 				<div class="flex-column">
 					<div class="rufilter rufilter--purple">
 						+ Time Request
+						<!-- <select id="cd-dropdown" class="cd-select">
+							<option value="-1" selected>Manager Queue</option>
+							<option value="1" class="icon-chrome">Chrome</option>
+							<option value="2" class="icon-safari">Safari</option>
+							<option value="3" class="icon-IE">Internet Explorer</option>
+							<option value="4" class="icon-firefox">Firefox</option>
+							<option value="5" class="icon-opera">Opera</option>
+						</select> -->
 					</div>
 				</div>
 				<div class="flex-column"></div>
@@ -246,8 +261,11 @@
 			</div>
 		</div>
 
+		<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 		<script src="assets/js/jquery-3.1.1.min.js"></script>
 		<script src="assets/js/plugins/jquery.mCustomScrollbar.min.js"></script>
+		<script src="assets/js/plugins/modernizr.custom.63321.js"></script>
+		<script src="assets/js/plugins/jquery.dropdown.js"></script>
 		<script src="assets/js/main.js"></script>
 
 	</body>
