@@ -36,13 +36,22 @@ $(document).ready(function() {
 		}
 	});
 
-	$('.flyout .form__input').focus(function() {
-		$(this).parents('.flyout__footer').addClass('flyout__footer--expanded');
+	function expandFooter() {
+		$('.flyout__footer').addClass('flyout__footer--expanded');
 		$('.flyout__body').addClass('flyout__body--shrunk');
-	});
-	$('.flyout .form__input').blur(function() {
-		$(this).parents('.flyout__footer').removeClass('flyout__footer--expanded');
+	}
+	function collapseFooter() {
+		$('.flyout__footer').removeClass('flyout__footer--expanded');
 		$('.flyout__body').removeClass('flyout__body--shrunk');
+	}
+	$('.flyout__footer').click(expandFooter);
+	$(document).mouseup(function (e) {
+		var container = $('.flyout__footer');
+
+    	if (!container.is(e.target)
+        	&& container.has(e.target).length === 0) {
+    		collapseFooter()
+    	}
 	});
 });
 
