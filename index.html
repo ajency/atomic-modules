@@ -859,7 +859,7 @@
 					</div>
 					<form class="form">
 						<label for="" class="form__label posrel">
-							<input name="comments" id="" rows="1" class="form__input form--input" placeholder="Comment by Operation Manager" required pattern="^[a-zA-Z0-9\s.,]+$">
+							<input name="comments" id="" rows="1" class="form__input form--input nospecial-chars" placeholder="Comment by Operation Manager" required>
 							<span class="label label--helper hide-before-expand">No special characters allowed</span>
 						</label>
 						<div class="spacer-20"></div>
@@ -899,6 +899,7 @@
 		<script src="assets/js/plugins/jquery.mCustomScrollbar.min.js"></script>
 		<script src="assets/js/plugins/modernizr.custom.63321.js"></script>
 		<script src="assets/js/plugins/jquery.dropdown.js"></script>
+		<script src="assets/js/plugins/jquery.alphanum.min.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 

@@ -55,6 +55,12 @@ $(document).ready(function() {
     	}
 	});
 
+	// documentation for this plugin - https://github.com/KevinSheedy/jquery.alphanum
+	$('.nospecial-chars').alphanum({
+	    disallow: '!@#$%^*{}[]~`/',  // Allow Upper Case characters
+	    allow: '-'
+	});
+
 	//rutab panels
 	$('.rutabs .rutabs__tab').click(function(e) {
 		e.preventDefault();
