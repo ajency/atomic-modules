@@ -858,8 +858,9 @@
 						</div>
 					</div>
 					<form class="form">
-						<label for="" class="form__label">
-							<textarea name="comments" id="" rows="1" class="form__input form--textarea" placeholder="Comment by Operation Manager" required></textarea>
+						<label for="" class="form__label posrel">
+							<input name="comments" id="" rows="1" class="form__input form--input" placeholder="Comment by Operation Manager" required pattern="^[a-zA-Z0-9\s.,]+$">
+							<span class="label label--helper hide-before-expand">No special characters allowed</span>
 						</label>
 						<div class="spacer-20"></div>
 						<div class="flex-row flex-row--neg-8">

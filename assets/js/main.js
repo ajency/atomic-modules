@@ -36,6 +36,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// form stuff
 	function expandFooter() {
 		$('.flyout__footer').addClass('flyout__footer--expanded');
 		$('.flyout__body').addClass('flyout__body--shrunk');
