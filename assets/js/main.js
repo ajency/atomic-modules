@@ -62,7 +62,7 @@ $(document).ready(function() {
 		$(this).addClass('rutabs__tab--active');
 		$elem = $(this).attr('href');
 
-		$(this).parents($toconsider).find('.is__rutab__panel').hide();
+		$(this).parents($toconsider).find('.is__rutabs__panel').hide().removeClass('hidefirst');
 		$(this).parents($toconsider).find($elem).show();
 	});
 });
