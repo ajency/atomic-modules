@@ -54,6 +54,7 @@
 		right: 0;
 		left: 5px;
 		bottom: 123px;
+		transition: all 0.5s;
 		&__inner {
 			overflow-y: auto;
 			position: absolute;
@@ -64,6 +65,9 @@
 			top: 127px;
 			padding: @common-p @common-p * 2;
 			padding-top: 0;
+		}
+		&--shrunk {
+			bottom: 199px;
 		}
 	}
 	&__header {
@@ -79,11 +83,25 @@
 		// box-shadow: 0 0 6px rgba(0,0,0,0.2);
 		border-radius: 3px 3px 0 0;
 		padding: 16px 40px;
-		-webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+		// -webkit-filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
 		filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+		height: 124px;
+		transition: all 0.5s;
 		.rubtn {
 			width: 32%;
 			margin-left: 2px;
+		}
+		&--expanded {
+			height: 200px;
+			.form {
+				padding-top: 15px;
+			}
+			.spacer-20 {
+				height: 30px;
+			}
+			.form__input {
+				padding: 15px;
+			}
 		}
 	}
 	&__pricetag {
