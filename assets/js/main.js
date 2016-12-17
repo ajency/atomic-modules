@@ -82,4 +82,6 @@ $(window).on("load",function(){
 		stack : false,
 		slidingIn : 100
 	} );
+   	
+   	$('.rufilter--select').removeClass('loading');
 });

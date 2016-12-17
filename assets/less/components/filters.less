@@ -24,4 +24,16 @@
 	&--green{
 		background-color: @filter-green;
 	}
+	.loading__text{
+		display: none;
+	}
+	&.loading{
+		padding: 16px;
+		.cd-select{
+			display: none;
+		}
+		.loading__text{
+			display: inline;
+		}
+	}
 }
