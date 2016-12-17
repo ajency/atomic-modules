@@ -684,8 +684,8 @@
 						<img src="assets/img/flyout-header-tabs.png" alt="" class="tab-mocks">
 						<div class="linetabs linetabs--sticky">
 							<div class="linetabs__header">
-								<a href="#panel1" class="linetabs__tab linetabs--active">Pick up &amp; Drop Point</a>
-								<a href="#panel2" class="linetabs__tab">Task &amp; Payment Information</a>
+								<a href="#panel1" data-target="#panel1" class="linetabs__tab linetabs--active">Pick up &amp; Drop Point</a>
+								<a href="#panel2" data-target="#panel2" class="linetabs__tab">Task &amp; Payment Information</a>
 							</div>
 						</div>
 					</div>
@@ -696,7 +696,7 @@
 								<a href="#panel2" class="linetabs__tab">Task &amp; Payment Information</a>
 							</div> -->
 							<div class="linetabs__panels">
-								<div class="flex-row flex-row--neg-8">
+								<div class="flex-row flex-row--neg-8" id="panel1">
 									<div class="flex-column flex-column--pr24">
 										<div class="label label--withbg label--primary-bg uppercase">Pick up point</div>
 										<div class="textdata textdata--br">
@@ -751,7 +751,7 @@
 								<div class="maprow maprow--neg42">
 									<img src="assets/img/map-russsh.png" alt="" class="resp-img">
 								</div>
-								<div class="flex-row flex-row--neg-8">
+								<div class="flex-row flex-row--neg-8" id="panel2">
 									<div class="flex-column flex-column--pr24">
 										<div class="label label--withbg label--primary-bg uppercase">Task Information</div>
 										<div class="textdata textdata--br">
@@ -841,13 +841,13 @@
 					</div>
 					<form class="form">
 						<label for="" class="form__label">
-							<textarea name="comments" id="" rows="1" class="form__input form--textarea" placeholder="Comment by Operation Manager"></textarea>
+							<textarea name="comments" id="" rows="1" class="form__input form--textarea" placeholder="Comment by Operation Manager" required></textarea>
 						</label>
 						<div class="spacer-20"></div>
 						<div class="flex-row flex-row--neg-8">
 							<div class="flex-column">
 								<label for="" class="form__label">
-									<select name="" id="" class="form__input form--select">
+									<select name="" id="" class="form__input form--select" required>
 										<option value="">Select Manager</option>
 										<option value="">Tony Stark</option>
 										<option value="">Stephen Strange</option>
@@ -857,7 +857,7 @@
 							</div>
 							<div class="flex-column">
 								<label for="" class="form__label">
-									<select name="" id="" class="form__input form--select">
+									<select name="" id="" class="form__input form--select" required>
 										<option value="">Select Employee</option>
 										<option value="">Steve Rogers</option>
 										<option value="">Bruce Banner</option>
