@@ -53,6 +53,18 @@ $(document).ready(function() {
     		collapseFooter()
     	}
 	});
+
+	//rutab panels
+	$('.rutabs .rutabs__tab').click(function(e) {
+		e.preventDefault();
+		$toconsider = $(this).parents('.rutabs').data('parent');
+		$(this).parents('.rutabs').find('.rutabs__tab').removeClass('rutabs__tab--active');
+		$(this).addClass('rutabs__tab--active');
+		$elem = $(this).attr('href');
+
+		$(this).parents($toconsider).find('.is__rutab__panel').hide();
+		$(this).parents($toconsider).find($elem).show();
+	});
 });
 
 $(window).on("load",function(){
